@@ -23,7 +23,7 @@ description: Tencent xinge message push.
 
 # cordova-plugin-xinge
 
-此插件是主要是为了在 cordova 应用中使用腾讯的信鸽推送。它提供信鸽的注册以及反注册等的一些功能。[腾讯信鸽推送](http://xg.qq.com/)是腾讯提供的免费移动消息推送的平台。
+此插件是主要是为了在 cordova 应用中使用腾讯的信鸽推送。它提供信鸽的注册以及反注册等一些功能。[腾讯信鸽推送](http://xg.qq.com/)是腾讯提供的免费移动消息推送的平台。
 
 ## Installation
 

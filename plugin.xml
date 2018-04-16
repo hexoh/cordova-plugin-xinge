@@ -57,7 +57,7 @@
 
             <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
             <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
-            <receiver android:name="当前应用的包名.receiver.MessageReceiver" android:exported="true">
+            <receiver android:name="org.apache.cordova.xinge.MessageReceiver" android:exported="true">
                 <intent-filter>
                     <!-- 接收消息透传 -->
                     <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE"/>
@@ -136,6 +136,7 @@
 
         <!-- source -->
         <source-file src="src/android/XGPush.java" target-dir="src/org/apache/cordova/xinge"/>
+        <source-file src="src/android/MessageReceiver.java" target-dir="src/org/apache/cordova/xinge"/>
 
         <source-file src="src/android/libs/armeabi/libtpnsSecurity.so" target-dir="libs/armeabi/"/>
         <source-file src="src/android/libs/armeabi/libxguardian.so" target-dir="libs/armeabi/"/>
