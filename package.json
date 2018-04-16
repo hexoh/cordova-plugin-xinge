@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-xinge",
+  "version": "1.0.1",
+  "description": "Cordova XGPush Plugin",
+  "cordova": {
+    "id": "cordova-plugin-xinge",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "XGPush",
+    "Message",
+    "Xinge",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "Apache 2.0 License"
+}
