@@ -30,4 +30,8 @@
     [[XGPushTokenManager defaultTokenManager] unbindWithIdentifer:account type:XGPushTokenBindTypeAccount];
 }
 
+-(void)setBadge:(NSInteger)badgeNumber{
+    [[XGPush defaultManager] setXgApplicationBadgeNumber:badgeNumber];
+}
+
 @end

@@ -27,4 +27,6 @@
 
 - (void)unregisterAccount:(CDVInvokedUrlCommand*)command;
 
+- (void)setBadge:(CDVInvokedUrlCommand*)command;
+
 @end

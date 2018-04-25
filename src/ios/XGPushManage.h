@@ -18,6 +18,8 @@
 
 -(void)unregisterAccount:(NSString*) account;
 
+-(void)setBadge:(NSInteger)badgeNumber;
+
 @end
 
 #endif /* XGPushManage_h */

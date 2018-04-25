@@ -13,6 +13,13 @@ var XGPush = {
      */
     unregisterAccount: function (account, success, error) {
         exec(success, error, 'XGPush', 'unregisterAccount', [account]);
+    },
+
+    /**
+     * ios set badge number method
+     */
+    setBadge: function (badgeNum, success, error) {
+        exec(success, error, 'XGPush', 'setBadge', [badgeNum]);
     }
 };
 
