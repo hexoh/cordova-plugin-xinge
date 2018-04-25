@@ -25,6 +25,8 @@
     <license>Apache 2.0 License</license>
     <keywords>cordova,XGPush,Message,Xinge</keywords>
 
+    <repo>https://github.com/allenxiaohu/cordova-plugin-xinge.git</repo>
+
     <js-module name="XGPush" src="www/XGPush.js">
         <clobbers target="cordova.plugins.XGPush"/>
     </js-module>
@@ -57,7 +59,7 @@
 
             <!-- 【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加 -->
             <!-- YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver： -->
-            <receiver android:name="org.apache.cordova.xinge.MessageReceiver" android:exported="true">
+            <receiver android:name="org.apache.cordova.xinge.MessageReceiver" android:exported="false">
                 <intent-filter>
                     <!-- 接收消息透传 -->
                     <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE"/>
@@ -70,7 +72,7 @@
             <activity android:name="com.tencent.android.tpush.XGPushActivity" android:exported="false">
                 <intent-filter>
                     <!-- 若使用AndroidStudio，请设置android:name="android.intent.action"-->
-                    <action android:name=""/>
+                    <action android:name="android.intent.action"/>
                 </intent-filter>
             </activity>
 
@@ -156,7 +158,10 @@
                 <param name="ios-package" value="CDVXGPush"/>
             </feature>
         </config-file>
+        <source-file src="src/ios/CDVXGPush.h"/>
         <source-file src="src/ios/CDVXGPush.m"/>
+        <source-file src="src/ios/XGPushManage.h"/>
+        <source-file src="src/ios/XGPushManage.m"/>
 
         <header-file src="src/ios/libs/XGPush.h"/>
         <source-file src="src/ios/libs/libXG-SDK.a" framework="true"/>
