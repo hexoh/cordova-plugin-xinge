@@ -6,9 +6,9 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
-
+ 
  http://www.apache.org/licenses/LICENSE-2.0
-
+ 
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -33,7 +33,7 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 
-@interface AppDelegate()<XGPushDelegate>
+@interface AppDelegate()<XGPushDelegate, XGPushTokenManagerDelegate>
 @end
 
 @implementation AppDelegate
@@ -50,6 +50,16 @@
 
 - (void)xgPushDidRegisteredDeviceToken:(NSString *)deviceToken error:(NSError *)error {
     NSLog(@"%s, result %@, error %@", __FUNCTION__, error?@"NO":@"OK", error);
+}
+
+- (void)xgPushDidBindWithIdentifier:(NSString *)identifier type:(XGPushTokenBindType)type error:(NSError *)error {
+    NSLog(@"%s, id is %@, error %@", __FUNCTION__, identifier, error);
+    NSLog(@"绑定%@%@%@", ((type == XGPushTokenBindTypeAccount)?@"账号":@"标签"), ((error == nil)?@"成功":@"失败"), identifier);
+}
+
+- (void)xgPushDidUnbindWithIdentifier:(NSString *)identifier type:(XGPushTokenBindType)type error:(NSError *)error {
+    NSLog(@"%s, id is %@, error %@", __FUNCTION__, identifier, error);
+    NSLog(@"解绑%@%@%@", ((type == XGPushTokenBindTypeAccount)?@"账号":@"标签"), ((error == nil)?@"成功":@"失败"), identifier);
 }
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
