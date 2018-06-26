@@ -69,7 +69,7 @@
     XGNotificationCategory *category = [XGNotificationCategory categoryWithIdentifier:@"xgCategory" actions:@[action1, action2] intentIdentifiers:@[] options:XGNotificationCategoryOptionNone];
     XGNotificationConfigure *configure = [XGNotificationConfigure configureNotificationWithCategories:[NSSet setWithObject:category] types:XGUserNotificationTypeAlert|XGUserNotificationTypeBadge|XGUserNotificationTypeSound];
     [[XGPush defaultManager] setNotificationConfigure:configure];
-    [[XGPush defaultManager] startXGWithAppID:2200252818 appKey:@"IA8ZI1222GSK" delegate:self];
+    [[XGPush defaultManager] startXGWithAppID:YOUR_ACCESS_ID appKey:@"YOUR_ACCESS_KEY" delegate:self];
     [[XGPush defaultManager] setXgApplicationBadgeNumber:0];
     [[XGPush defaultManager] reportXGNotificationInfo:launchOptions];
     [XGPushTokenManager defaultTokenManager].delegate = self;
