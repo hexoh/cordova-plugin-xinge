@@ -148,7 +148,7 @@
         <lib-file src="src/android/libs/jg_filter_sdk_1.1.jar"/>
         <lib-file src="src/android/libs/mid-core-sdk-4.0.6.jar"/>
         <lib-file src="src/android/libs/wup-1.0.0.E-SNAPSHOT.jar"/>
-        <lib-file src="src/android/libs/Xg_sdk_v3.2.2_20180116_1704.jar"/>
+        <lib-file src="src/android/libs/Xg_sdk_v3.2.3_20180403_1839.jar"/>
     </platform>
 
     <!-- ios -->
