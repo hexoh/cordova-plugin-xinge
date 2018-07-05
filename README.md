@@ -375,7 +375,7 @@ __Supported Platforms__
 
 | Param | Type | Description |
 | --- | --- | --- |
-| badgeNum | int | 角标数 |
+| badgeNum | string | 角标数 |
 | success | function | 调用成功回调函数 |
 | error | function | 调用失败回调函数 |
 
@@ -383,7 +383,7 @@ __Supported Platforms__
 
 ```js
 document.addEventListener('deviceready', function () {
-  cordova.plugins.XGPush.setBadge(0, function (success) {
+  cordova.plugins.XGPush.setBadge('0', function (success) {
     console.log('success:' + JSON.stringify(success));
   }, function (error) {
     console.log('error:' + JSON.stringify(error));
