@@ -27,7 +27,7 @@ description: Tencent xinge message push.
 
 ## Installation 
 
-    cordova plugin add https://github.com/allenxiaohu/cordova-plugin-xinge.git
+    cordova plugin add https://github.com/hexoh/cordova-plugin-xinge.git
 
 ## How to use
 
