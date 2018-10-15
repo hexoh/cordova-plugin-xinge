@@ -25,7 +25,7 @@
     <license>Apache 2.0 License</license>
     <keywords>cordova,XGPush,Message,Xinge</keywords>
 
-    <repo>https://github.com/allenxiaohu/cordova-plugin-xinge.git</repo>
+    <repo>https://github.com/hexoh/cordova-plugin-xinge.git</repo>
 
     <js-module name="XGPush" src="www/XGPush.js">
         <clobbers target="cordova.plugins.XGPush"/>
