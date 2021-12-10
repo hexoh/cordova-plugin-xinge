@@ -1,6 +1,6 @@
 ---
-title: XGPush
-description: Tencent xinge message push.
+标题: XGPush
+描述: Tencent xinge message push.
 ---
 <!---
 # license: Licensed to the Apache Software Foundation (ASF) under one
@@ -25,11 +25,13 @@ description: Tencent xinge message push.
 
 此插件是主要是为了在 cordova 应用中使用腾讯的信鸽推送。它提供信鸽的注册以及反注册等一些功能。[腾讯信鸽推送](http://xg.qq.com/)是腾讯提供的免费移动消息推送的平台。
 
-## Installation 
+## 安装 
 
-    cordova plugin add https://github.com/hexoh/cordova-plugin-xinge.git
+```shell
+cordova plugin add https://github.com/hexoh/cordova-plugin-xinge.git
+```
 
-## How to use
+## 如何使用
 
 安装完插件后，需要按照[官方说明](http://docs.developer.qq.com/xg/)修改对应的包名以及添加相关启动程序。
 
