@@ -1,5 +1,3 @@
-**`重要: 由于腾讯已经将信鸽项目与腾讯云合并，因此插件已经不能使用。`**
-
 ---
 标题: XGPush
 描述: Tencent xinge message push.
@@ -22,6 +20,8 @@
 #         specific language governing permissions and limitations
 #         under the License.
 -->
+
+**`提示: 由于腾讯已经将信鸽项目与腾讯云合并，因此插件已经不能使用。`**
 
 # cordova-plugin-xinge
 
