@@ -1,3 +1,4 @@
+# **`重要: 由于腾讯已经将信鸽项目与腾讯云合并，顾此插件已经不能使用。`**
 ---
 标题: XGPush
 描述: Tencent xinge message push.
